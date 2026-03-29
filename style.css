@@ -26,12 +26,12 @@ h1 {
 }
 
 h1 i {
-  color: #90caf9;
+  color: #7dc1f9;
   margin: 0 10px;
 }
 
 .breed-selector {
-  margin: 30px 0;
+  margin: 30px 0; 
   text-align: center;
   background-color: #1a2c42;
   padding: 20px;
@@ -40,12 +40,16 @@ h1 i {
 }
 
 select {
-  padding: 12px 20px;
-  font-size: 16px;
+  /* Adding space inside the container or element */
+  padding: 15px 20px;
+  font-size: 17px;
   font-family: 'Open Sans', sans-serif;
+  /* automatically capitalizes the first letter of each word */
   text-transform: capitalize;
-  border: 2px solid #1976d2;
+  /* Border is 2 pixels thick, solid, and has a medium blue color */
+  border: 2px solid #1976d2; 
   border-radius: 8px;
+  /* No matter the screen size, the element will not shrink below 250 pixels in width */
   min-width: 250px;
   background-color: #0d2240;
   color: #e6f1ff;
@@ -55,6 +59,10 @@ select {
 
 select:hover, select:focus {
   border-color: #64b5f6;
+  /* adds a soft, glowing shadow around the outside of the element. 
+  The first two zeros mean the shadow is not shifted left, right, up, or down, so it appears evenly all around the element.
+  The 8px value sets how much the shadow spreads out, making it look like a gentle glow.
+  0.6 means 60% opacity, so the shadow is visible */
   box-shadow: 0 0 8px rgba(100, 181, 246, 0.6);
   outline: none;
 }
